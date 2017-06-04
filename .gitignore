@@ -1,0 +1,7 @@
+snaps
+data
+out
+*.gif
+
+*.pyc
+.DS_Store
