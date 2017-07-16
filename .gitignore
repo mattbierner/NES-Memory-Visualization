@@ -1,7 +1,6 @@
-snaps
-data
 out
 *.gif
+*.mp4
 
 *.pyc
 .DS_Store
