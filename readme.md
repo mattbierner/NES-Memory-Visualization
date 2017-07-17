@@ -50,4 +50,4 @@ ffmpeg -framerate 60 -i 'out/%d.png' -vf format=yuv420p output.mp4
 ```
 
 
-[blog]: https://blog.mattbierner.com/nes-memory-visualization
+[blog]: https://blog.mattbierner.com/nes-memory/
