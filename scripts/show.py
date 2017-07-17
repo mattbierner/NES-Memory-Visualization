@@ -1,3 +1,6 @@
+"""
+Visualize a single memory dump
+"""
 import sys
 import math
 import os
@@ -11,13 +14,8 @@ def generate_image(input_data):
     with open(input_data, 'rb') as f:
         data = bytearray(f.read())
 
-    return draw_byte_pattern(6, [0, 2], data, color.lookup(color.nes), width = 64, scale = 8)
     return draw_bitstring(8, data, color.expand(8, 6, color.lookup(color.nes)), width = 64, scale = 8)
-    return draw_bitstring(6, data, color.lookup(color.nes), width = 64, scale = 8)
-
-
-
-
+    #return draw_byte_pattern(6, [0, 2], data, color.lookup(color.nes), width = 64, scale = 8)
 
 
 if __name__ == '__main__':

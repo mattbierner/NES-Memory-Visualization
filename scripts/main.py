@@ -1,4 +1,5 @@
-"""Visualize multiple memory dumps and combine them with game screenshots
+"""
+Visualize multiple memory dumps and combine them with game screenshots
 """
 import sys
 import math
@@ -19,6 +20,7 @@ def generate_image(input_image, input_data, output_file):
         data = bytearray(f.read())
 
     img = draw_bitstring(2, data, color.lookup(color.gameboy), width = 128, scale = 4)
+
     out = merge_images(screenshot, img)
     out.save(output_file)
     print(output_file)
